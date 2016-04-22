@@ -1,0 +1,2 @@
+Manifest-Version: 2.2.2
+Class-Path: /src

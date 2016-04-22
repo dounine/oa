@@ -1,0 +1,61 @@
+<!DOCTYPE html><html><head><script src="../flotr2.min.js"></script><script src="lib/codemirror/lib/codemirror.js"></script><script src="lib/codemirror/mode/javascript/javascript.js"></script><script src="lib/beautify.js"></script><script src="lib/randomseed.js"></script><script src="lib/jquery-1.7.1.min.js"></script><script src="lib/jquery.ba-hashchange.min.js"></script><script src="../flotr2.examples.min.js"></script><script src="../flotr2.examples.types.js"></script><script type="text/javascript" src="../lib/yepnope.js"></script>
+<script type="text/javascript" src="js/includes.min.js"></script>
+<script>
+$(function(){
+(function basic_pie(container) {
+
+  var
+    d1 = [[0, 4]],
+    d2 = [[0, 3]],
+    d3 = [[0, 1.03]],
+    d4 = [[0, 3.5]],
+    graph;
+  var options = {
+    HtmlText : false,
+    grid : {
+      verticalLines : false,
+      horizontalLines : false
+    },
+    xaxis : { showLabels : false },
+    yaxis : { showLabels : false },
+    pie : {
+      show : true, 
+      explode : 6
+    },
+    mouse : { track : true },
+    legend : {
+      position : 'se',
+      backgroundColor : '#D2E8FF'
+    }
+  };
+   var datas = [
+    { data : d1, label : 'Comedy' },
+    { data : d2, label : 'Action' },
+    { data : d3, label : 'Romance'},
+    { data : d4, label : 'Drama' }
+  ];
+  graph = Flotr.draw(container, datas, options);
+    Flotr.EventAdapter.observe(container, 'flotr:click', function(position){
+		//var o = Flotr._.extend(Flotr._.clone(options), opts || {});
+    // Add a point to the series at the location of the click
+    var pie = {
+        explode : 30
+      };
+	
+    for(var i=0;i<datas.length;i++){
+	 delete datas[i].pie;
+	  }
+  datas[position.hit.seriesIndex].pie = pie;
+
+    // Redraw the graph, with the new series.
+	//graph.clearCrosshair();
+    graph = Flotr.draw(container,datas , options);
+  });
+})(document.getElementById("editor-render-0"));});
+</script></head>
+<style>#editor-render-0 {
+  width: 340px;
+  height: 220px;
+  margin: 24px auto;
+}</style><body>
+<div class="render" id="editor-render-0" style="position: relative;"></div></body></html>

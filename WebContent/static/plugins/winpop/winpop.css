@@ -1,0 +1,87 @@
+.winpop-mask,
+.winpop-box {
+    display: none;
+    position: fixed;
+}
+
+.winpop-mask {
+    left: 0;
+    top: 0;
+    z-index: 999;
+    width: 100%;
+    height: 100%;
+    background-color: #000;
+    opacity: .3;
+    filter: alpha(opacity=30);
+}
+
+.winpop-box {
+    left: 50%;
+    top: 50%;
+    z-index: 1000;
+    margin-top: -100px;
+    margin-left: -160px;
+    width: 320px;
+    height: 200px;
+    background-color: #fff;
+}
+
+.winpop-box .winpop-main {
+    padding: 62px 20px;
+    height: 32px;
+    line-height: 32px;
+    text-align: center;
+    color: #666;
+    font-size: 16px;
+}
+
+.winpop-box .winpop-btns {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    overflow: hidden;
+}
+
+.winpop-box .pop-btn {
+    float: left;
+    position: relative;
+    /*margin-left: -1px;*/
+    width: 50%;
+    height: 44px;
+    border: 1px solid #555;
+    background-color: #555;
+    color: #fff;
+    font: 14px/1.5 '\5fae\8f6f\96c5\9ed1', Arial, Tahoma, sans-serif;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.winpop-box .pop-btn:hover {
+    background-color: #403F40;
+    color: #FFF219;
+}
+
+.winpop-box .confirm-true {
+    /*margin-left: -1px\9;*/
+    border-left-color: #333;
+}
+
+.winpop-box .alert-button {
+    width: 100%;
+}
+
+/*.winpop-box .alert-button,
+.winpop-box .confirm-true {
+    background-color: #73b9ff;
+}
+
+.winpop-box .alert-button:hover,
+.winpop-box .confirm-true:hover {
+    background-color: #58a7f6;
+}
+
+.winpop-box .confirm-true {
+    margin-left: 50px;
+}*/

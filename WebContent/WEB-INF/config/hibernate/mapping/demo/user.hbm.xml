@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+	<union-subclass name="net.yasion.demo.model.User" extends="net.yasion.common.model.BaseModel" table="t_user">
+		<property name="name" type="java.lang.String">
+			<column name="name" length="255" />
+		</property>
+		<set lazy="false" name="ordersSet" table="t_orders" inverse="true" cascade="save-update,delete-orphan">
+			<key column="userId" />
+			<one-to-many class="net.yasion.demo.model.Orders" />
+		</set>
+		<many-to-one lazy="false" name="group" column="groupId" cascade="all" />
+		<one-to-one lazy="false" fetch="select" name="idCard" class="net.yasion.demo.model.IdCard" property-ref="user" cascade="save-update,delete" />
+	</union-subclass>
+</hibernate-mapping>

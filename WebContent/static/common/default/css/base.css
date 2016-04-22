@@ -1,0 +1,28 @@
+@CHARSET "UTF-8";
+/*框架级别的CSS可以写在这里*/
+input.searchText, input.searchValue {
+	height: auto;
+}
+
+/*解决Td内容为空时不显示边框的问题-兼容IE、firefox、chrome START*/
+table {
+	border-collapse: collapse;
+}
+
+table td {
+	empty-cells: show;
+}
+
+caption h1 {
+	text-align: left;
+	font-size: 20px;
+}
+/*解决Td内容为空时不显示边框的问题-兼容IE、firefox、chrome END*/
+/*JQuery validate*/
+label.error {
+	color: red;
+	font-size: 13px;
+	margin-left: 5px;
+	padding-left: 16px;
+	background: url("../img/error.png") left no-repeat;
+}

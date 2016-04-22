@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Winpop组件Demo</title>
+    <link rel="stylesheet" href="./winpop.css">
+<style>
+body {
+    font: 14px/1.5 '\5fae\8f6f\96c5\9ed1', Arial, Tahoma, sans-serif;
+}
+</style>
+</head>
+<body>
+<a href="javascript:alert('自定义Alert控件')">自定义Alert控件</a>&nbsp;&nbsp;&nbsp;&nbsp;
+<a href="javascript:confirm('关闭自定义Confirm组件吗？', function(flag){if(flag){alert('True');}else{alert('False');}})">自定义Confirm组件</a>
+
+<script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+<script src="./winpop.js"></script>
+</body>
+</html>

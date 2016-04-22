@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<taglib xmlns="http://java.sun.com/xml/ns/j2ee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://java.sun.com/xml/ns/j2ee   
+        http://java.sun.com/xml/ns/j2ee/web-jsptaglibrary_2_0.xsd" version="2.0">
+	<!-- 定义函数版本 -->
+	<tlib-version>1.0</tlib-version>
+	<!-- 定义函数名称 -->
+	<short-name>yahnfn</short-name>
+	<!-- 定义第一个函数 -->
+	<function>
+		<!-- 定义第一个函数：reverse -->
+		<name>isPermissions</name>
+		<!-- 定义函数处理类 -->
+		<function-class>net.yasion.common.web.tag.PermissionELFunction</function-class>
+		<!-- 定义函数的对应方法 -->
+		<function-signature>java.lang.Boolean isPermissions(net.yasion.common.model.TbUser, java.lang.String[])</function-signature>
+	</function>
+	<function>
+		<name>isRoles</name>
+		<function-class>net.yasion.common.web.tag.PermissionELFunction</function-class>
+		<function-signature>java.lang.Boolean isRoles(net.yasion.common.model.TbUser, java.lang.String[])</function-signature>
+	</function>
+	<function>
+		<name>handelUrl</name>
+		<function-class>net.yasion.common.utils.HtmlStringUtils</function-class>
+		<function-signature>java.lang.String handelUrl(java.lang.String)</function-signature>
+	</function>
+	<function>
+		<name>splitAndTrim</name>
+		<function-class>net.yasion.common.utils.HtmlStringUtils</function-class>
+		<function-signature>java.lang.String[] splitAndTrim(java.lang.String, java.lang.String, java.lang.String)</function-signature>
+	</function>
+	<function>
+		<name>txt2Html</name>
+		<function-class>net.yasion.common.utils.HtmlStringUtils</function-class>
+		<function-signature>java.lang.String txt2Html(java.lang.String)</function-signature>
+	</function>
+	<function>
+		<name>textCut</name>
+		<function-class>net.yasion.common.utils.HtmlStringUtils</function-class>
+		<function-signature>java.lang.String textCut(java.lang.String, int, java.lang.String)</function-signature>
+	</function>
+	<function>
+		<name>htmlCut</name>
+		<function-class>net.yasion.common.utils.HtmlStringUtils</function-class>
+		<function-signature>java.lang.String htmlCut(java.lang.String, int, java.lang.String)</function-signature>
+	</function>
+	<function>
+		<name>html2Text</name>
+		<function-class>net.yasion.common.utils.HtmlStringUtils</function-class>
+		<function-signature>java.lang.String html2Text(java.lang.String, int)</function-signature>
+	</function>
+	<function>
+		<name>contains</name>
+		<function-class>net.yasion.common.utils.HtmlStringUtils</function-class>
+		<function-signature>boolean contains(java.lang.String, java.lang.String)</function-signature>
+	</function>
+	<function>
+		<name>containsEscapeString</name>
+		<function-class>net.yasion.common.utils.HtmlStringUtils</function-class>
+		<function-signature>boolean containsEscapeString(java.lang.String)</function-signature>
+	</function>
+	<function>
+		<name>replaceEscapeString</name>
+		<function-class>net.yasion.common.utils.HtmlStringUtils</function-class>
+		<function-signature>java.lang.String replaceEscapeString(java.lang.String)</function-signature>
+	</function>
+</taglib>  

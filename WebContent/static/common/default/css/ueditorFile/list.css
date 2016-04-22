@@ -1,0 +1,28 @@
+@CHARSET "UTF-8";
+
+form input[type="text"] {
+	height: auto;
+}
+
+form input[type="password"] {
+	height: auto;
+}
+
+form input[type="email"] {
+	height: auto;
+}
+
+form select {
+	height: auto;
+}
+
+/*
+自定义BOOTSTRAP框架Modal的宽高和显示位置
+http://qoophp.com/archives/187
+#editDialog.modal {
+	SET THE WIDTH OF THE MODAL 设置Modal的宽度
+	width: 700px;
+	CHANGE MARGINS TO ACCOMODATE THE NEW WIDTH (original = margin: -250px 0 0 -280px;)
+	margin: -250px 0 0 -350px;
+	这里设置了Modal的固定宽度为700PX, 注意这里的宽度不是modal-body的宽度, 这时候如果要让弹出的Modal居中的话,就要修改Modal的Margin-left了, 从原来的-280px 改为 -450px(700/2)
+} */

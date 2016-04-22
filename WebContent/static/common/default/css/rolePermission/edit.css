@@ -1,0 +1,17 @@
+@CHARSET "UTF-8";
+
+form input[type="text"] {
+	height: auto;
+}
+
+form input[type="password"] {
+	height: auto;
+}
+
+form input[type="email"] {
+	height: auto;
+}
+
+form select {
+	height: auto;
+}

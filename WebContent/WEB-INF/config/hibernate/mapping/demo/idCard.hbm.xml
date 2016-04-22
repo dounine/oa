@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+	<union-subclass name="net.yasion.demo.model.IdCard" extends="net.yasion.common.model.BaseModel" table="t_idCard">
+		<property name="serial" type="java.lang.String">
+			<column name="serial" length="255" />
+		</property>
+		<property name="info" type="java.lang.String">
+			<column name="info" length="1024" />
+		</property>
+		<many-to-one lazy="false" name="user" unique="true" column="userId" />
+	</union-subclass>
+</hibernate-mapping>

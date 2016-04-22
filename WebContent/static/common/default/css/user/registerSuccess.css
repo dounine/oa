@@ -1,0 +1,98 @@
+@CHARSET "UTF-8";
+
+p {
+	line-height: 24px;
+}
+
+a {
+	color: #000;
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+li {
+	list-style: none
+}
+
+dl,dd,dt,ul,li,form,p,div {
+	margin: 0;
+	padding: 0;
+	line-height: normal;
+}
+
+body {
+	margin: 0 auto;
+	font-size: 13px;
+	color: #333;
+}
+
+.clear {
+	clear: both;
+}
+
+.index {
+	text-align: center;
+	margin: 0 auto;
+	width: 900px;
+}
+
+.top {
+	text-align: center;
+	width: 900px;
+	height: 154px;
+}
+
+.jingdu {
+	height: 40px;
+}
+
+.zhuce {
+	text-align: center;
+	padding-top: 30px;
+}
+
+.zhuce .left {
+	float: left;
+	width: 350px;
+	padding: 20px 0 0 60px;
+}
+
+.zhuce .left table {
+	text-align: right;
+}
+
+.zhuce .left table td {
+	padding-right: 5px;
+}
+
+.zhuce .left table td input {
+	padding-top: 5px;
+}
+
+.zhuce .right {
+	float: right;
+	padding: 20px;
+	width: 400px;
+}
+
+.zhuce .right ul {
+	text-align: left;
+	padding-left: 30px
+}
+
+.zhuce .right ul li {
+	margin-bottom: 20px;
+	width: 200px;
+	padding-left: 45px;
+	line-height: 40px;
+}
+
+.footer {
+	margin-top: 20px;
+	height: 50px;
+	border-top: 1px solid #e9e9e9;
+	padding-top: 10px;
+}
