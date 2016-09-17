@@ -9,7 +9,7 @@ Source Database       : ajoa
 Target Server Type    : MYSQL
 Target Server Version : 50611
 File Encoding         : 65001
-
+//测试账号,给你带来的不便请见谅;
 Date: 2015-03-26 14:16:12
 */
 
